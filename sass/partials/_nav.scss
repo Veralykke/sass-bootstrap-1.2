@@ -1,3 +1,26 @@
-nav{
+nav {
     background: getColour(primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .container{
+
+    }
+    .logo {
+        font-size: 1.6em;
+    }
+
+    *{
+        color: white;
+        text-decoration: none;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    li{
+        margin-left: 1em;
+    }
 }

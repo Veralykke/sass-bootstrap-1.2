@@ -8,4 +8,37 @@ body {
   margin: 0;
   font-family: "open-sans", sans-serif;
 }
+
+nav {
+  background: #779fa1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  font-size: 1.6em;
+}
+
+nav * {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1em;
+}
 /*# sourceMappingURL=style.css.map */
