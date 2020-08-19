@@ -9,8 +9,12 @@ body {
   font-family: "open-sans", sans-serif;
 }
 
-nav {
-  background: #779fa1;
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.container-flex, nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +24,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav {
+  background: #779fa1;
 }
 
 nav .logo {
@@ -40,5 +48,104 @@ nav ul {
 
 nav li {
   margin-left: 1em;
+}
+
+nav a.active {
+  padding: 0.4em;
+  background: #95b4b6;
+  border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.form-common, .form-search input, .form-search button {
+  border: none;
+  height: 25px;
+  padding: 0.2rem 0.3em;
+  color: white;
+}
+
+.form-search input {
+  background: #5e8587;
+}
+
+.form-search button {
+  background: #564154;
+  width: 35px;
+}
+
+.form-search button:hover {
+  background: #95b4b6;
+  cursor: pointer;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.btn {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.btn.squared {
+  background: #88498f;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 1em;
+  border-radius: 0;
+  border: 3px solid white;
+}
+
+.btn.rounded {
+  background: #564154;
+  height: 200px;
+  width: 300px;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+
+.btn.circle {
+  background: #88498f;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: 3px solid white;
 }
 /*# sourceMappingURL=style.css.map */

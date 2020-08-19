@@ -1,11 +1,8 @@
 nav {
     background: getColour(primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+   
     .container{
-
+        @extend .container-flex;
     }
     .logo {
         font-size: 1.6em;
@@ -22,5 +19,12 @@ nav {
     }
     li{
         margin-left: 1em;
+    }
+
+    a.active {
+      padding: 0.4em;
+      background: lighten(getColour(primary), 10%);
+      border-radius: 5px;
+
     }
 }
